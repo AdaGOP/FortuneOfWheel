@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct theValue: Equatable{
+struct theValue: Equatable, Hashable{
     let id = UUID()
     let val : String
 }

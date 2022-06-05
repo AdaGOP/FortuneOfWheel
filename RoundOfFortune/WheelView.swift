@@ -20,7 +20,7 @@ struct WheelView: View {
     // degree of circle and hue
     @Binding var degree: Double
     
-    let array: [theValue]
+    @Binding var array: [theValue]
     let circleSize: Double
     
     var body: some View {
