@@ -19,7 +19,8 @@ struct ContentView: View {
     @State private var optionsListWithIndex: [Int : String] = [:]
     @State private var valueIndex: Int = 0
     @State var arrayIndeks: [theValue] = []
-    
+    @State var chosenIndex: Int = 0
+    @State private var showAlert = false
     
     var body: some View {
         ZStack() {
@@ -28,9 +29,14 @@ struct ContentView: View {
             VStack(alignment: .center, spacing: 10){
                 Spacer()
                 ZStack(){
-                    WheelView(degree: $degree, array: $arrayIndeks, circleSize: 300)
+                    WheelView(chosenIndex: $chosenIndex, degree: $degree, array: $arrayIndeks, circleSize: 300)
                         .offset(y: -100)
                         .shadow(color: .white, radius: 4, x: 0, y: 0)
+                    Triangle()
+                        .fill(.red)
+                        .frame(width: 60, height: 70, alignment: .trailing)
+                        .offset(x:100, y: 160)
+                        .rotationEffect(.degrees(-90))
                     if arrayIndeks.count == 0 {
                         VStack {
                             Text("No data is available.")
@@ -41,6 +47,36 @@ struct ContentView: View {
                         .offset(y: -100)
                     }
                 }
+                .frame(width: 200, height: 200, alignment: .center)
+                
+                Button {
+                    if arrayIndeks.count != 0 {
+                        for _ in 0 ..< 100 {
+                            moveWheel()
+                        }
+                        print(chosenIndex)
+                        showAlert = true
+                    }
+                } label: {
+                    Text("Click here to play")
+                }
+                .padding(5)
+                .background(.orange)
+                .foregroundColor(.white)
+                .cornerRadius(8)
+                .alert(isPresented: $showAlert) {
+                    Alert(title: Text("Congratulations!"), message: Text("Your spouse is \(optionsListWithIndex[Int(arrayIndeks[chosenIndex].val) ?? 0] ?? "")"), dismissButton: .default(Text("OK"), action: {
+                        
+                        optionsListWithIndex.removeValue(forKey: Int(arrayIndeks[chosenIndex].val) ?? 0)
+                        arrayIndeks.remove(at: chosenIndex)
+                        print(optionsListWithIndex)
+                        
+                    }))
+                    
+                }
+                
+                Spacer()
+                    .frame(height: 30)
                 
                 HStack(){
                     Spacer()
@@ -107,17 +143,13 @@ struct ContentView: View {
         }
     }
     
-    func findKeyForValue(value: String, dictionary: [theValue: String]) ->String?
-    {
-        for (key, string) in dictionary
-        {
-            if (string.contains(value))
-            {
-                return key.val
-            }
+    func moveWheel() {
+        withAnimation(.spring()){
+            let randomInt = Int.random(in: 0 ..< arrayIndeks.count)
+            chosenIndex = randomInt
+            
+            degree += Double((360/arrayIndeks.count) * randomInt)
         }
-        
-        return nil
     }
 }
 
