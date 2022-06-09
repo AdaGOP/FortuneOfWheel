@@ -6,8 +6,13 @@
 //
 
 import Foundation
+import UIKit
 
 struct theValue: Equatable, Hashable{
     let id = UUID()
     let val : String
+    var xOffset : CGFloat
+    var yOffset : CGFloat
+    
+    
 }

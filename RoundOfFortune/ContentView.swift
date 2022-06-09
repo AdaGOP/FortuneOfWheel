@@ -21,6 +21,7 @@ struct ContentView: View {
     @State var arrayIndeks: [theValue] = []
     @State var chosenIndex: Int = 0
     @State private var showAlert = false
+    @State var textArray : [Text] = []
     
     var body: some View {
         ZStack() {
@@ -28,73 +29,68 @@ struct ContentView: View {
                 .hueRotation(Angle(degrees: degree))
             VStack(alignment: .center, spacing: 10){
                 Spacer()
+                    .frame(height: 100)
                 ZStack(){
-                    WheelView(chosenIndex: $chosenIndex, degree: $degree, array: $arrayIndeks, circleSize: 300)
-                        .offset(y: -100)
+                    WheelView(chosenIndex: $chosenIndex, degree: $degree, array: $arrayIndeks, circleSize: UIScreen.main.bounds.width/1.25, textArray: $textArray)
+                        .offset(y: -60)
                         .shadow(color: .white, radius: 4, x: 0, y: 0)
                     Triangle()
                         .fill(.red)
-                        .frame(width: 60, height: 70, alignment: .trailing)
-                        .offset(x:100, y: 160)
+                        .frame(width: UIScreen.main.bounds.width / 5, height: UIScreen.main.bounds.height / 14, alignment: .trailing)
+                        .offset(x:60, y: UIScreen.main.bounds.width/2.3)
                         .rotationEffect(.degrees(-90))
-                    if arrayIndeks.count == 0 {
-                        VStack {
-                            Text("No data is available.")
-                            Text("Add some below")
+//                    }
+                    Button {
+                        if arrayIndeks.count != 0 {
+                                moveWheel()
+    //                        }
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                showAlert = true
+                            }
+                            
                         }
-                        .frame(width: 200, height: 200, alignment: .center)
-                        .foregroundColor(Color.primary)
-                        .offset(y: -100)
+                    } label: {
+                        Text(arrayIndeks.count != 0 ? "Play" : "Add data below")
+                            .font(arrayIndeks.count != 0 ? .title2 : .subheadline)
                     }
-                }
-                .frame(width: 200, height: 200, alignment: .center)
-                
-                Button {
-                    if arrayIndeks.count != 0 {
-                        for _ in 0 ..< 100 {
-                            moveWheel()
-                        }
-                        print(chosenIndex)
-                        showAlert = true
+                    .padding()
+                    .frame(width: UIScreen.main.bounds.width/4, height: UIScreen.main.bounds.width/4, alignment: .center)
+                    .background(.white)
+                    .foregroundColor(.orange)
+                    .clipShape(Circle())
+                    .offset(y: -60)
+                    .alert(isPresented: $showAlert) {
+                        Alert(title: Text("Congratulations!"), message: Text("Your spouse is \(optionsListWithIndex[Int(arrayIndeks[chosenIndex].val) ?? 0] ?? "")"), dismissButton: .default(Text("OK"), action: {
+                            
+                            optionsListWithIndex.removeValue(forKey: Int(arrayIndeks[chosenIndex].val) ?? 0)
+                            arrayIndeks.remove(at: chosenIndex)
+                            
+                            if arrayIndeks.count == 0 {
+                                resetData()
+                            }
+                            
+                        }))
+                        
                     }
-                } label: {
-                    Text("Click here to play")
-                }
-                .padding(5)
-                .background(.orange)
-                .foregroundColor(.white)
-                .cornerRadius(8)
-                .alert(isPresented: $showAlert) {
-                    Alert(title: Text("Congratulations!"), message: Text("Your spouse is \(optionsListWithIndex[Int(arrayIndeks[chosenIndex].val) ?? 0] ?? "")"), dismissButton: .default(Text("OK"), action: {
-                        
-                        optionsListWithIndex.removeValue(forKey: Int(arrayIndeks[chosenIndex].val) ?? 0)
-                        arrayIndeks.remove(at: chosenIndex)
-                        print(optionsListWithIndex)
-                        
-                    }))
-                    
                 }
                 
                 Spacer()
-                    .frame(height: 30)
+                    .frame(height: 20)
                 
                 HStack(){
-                    Spacer()
+                    Spacer(minLength: 20.0)
                     Text("Option List")
                         .font(.title2)
                         .bold()
                         .frame(alignment: .leading)
                     Spacer()
-                        .frame(width: 165)
+                        .frame(minWidth: 100, idealWidth: 500, maxWidth: 780, alignment: .leading)
                     Button {
-                        optionsListWithIndex.removeAll()
-                        arrayIndeks.removeAll()
-                        valueIndex = 0
+                        resetData()
                     } label: {
                         Label("Reset", systemImage: "repeat")
                     }
                     .foregroundColor(.red)
-                    .cornerRadius(8)
                     Spacer()
                     
                 }
@@ -111,7 +107,7 @@ struct ContentView: View {
                     Button(action: {
                         valueIndex += 1
                         optionsListWithIndex[valueIndex] = textOption
-                        arrayIndeks.append(theValue(val: "\(valueIndex)"))
+                        arrayIndeks.append(theValue(val: "\(valueIndex)", xOffset: 0, yOffset: 0))
                         textOption = ""
                     }) {
                         Label("Add option", systemImage: "plus")
@@ -123,33 +119,43 @@ struct ContentView: View {
                     .cornerRadius(8)
                     Spacer()
                 }
+                
                 ScrollView{
                     ForEach(arrayIndeks, id: \.self) { indeks in
                         VStack{
                             HStack{
                                 Text("\(indeks.val)")
                                 Text(optionsListWithIndex[Int(indeks.val) ?? 0] ?? "")
-                                    .font(.system(.body))
+                                    .font(.body)
                             }
-                            .frame(width: 340, height: 20, alignment: .leading)
+                            .frame(width: UIScreen.main.bounds.width - 50, alignment: .leading)
                             Divider()
-                            
                         }
                     }
                 }
-                .frame(width: 350, height: 150, alignment: .center)
+                .frame(minWidth: 300, idealWidth: 450, maxWidth: 980, minHeight: 150, idealHeight: 150, maxHeight: 180, alignment: .leading)
             }
             
         }
     }
     
     func moveWheel() {
-        withAnimation(.spring()){
-            let randomInt = Int.random(in: 0 ..< arrayIndeks.count)
+        let randomInt = Int.random(in: 0 ..< arrayIndeks.count)
             chosenIndex = randomInt
-            
-            degree += Double((360/arrayIndeks.count) * randomInt)
+        for _ in 0 ..< 100 {
+            withAnimation(.spring(response: 0.55, dampingFraction: 0.83, blendDuration: 0.5)){
+                
+                degree += Double((360/arrayIndeks.count))
+               
+            }
         }
+        degree = 0
+    }
+    
+    func resetData() {
+        optionsListWithIndex.removeAll()
+        arrayIndeks.removeAll()
+        valueIndex = 0
     }
 }
 
