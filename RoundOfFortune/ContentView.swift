@@ -21,7 +21,6 @@ struct ContentView: View {
     @State var arrayIndeks: [theValue] = []
     @State var chosenIndex: Int = 0
     @State private var showAlert = false
-    @State var textArray : [Text] = []
     
     var body: some View {
         ZStack() {
@@ -31,7 +30,7 @@ struct ContentView: View {
                 Spacer()
                     .frame(height: 100)
                 ZStack(){
-                    WheelView(chosenIndex: $chosenIndex, degree: $degree, array: $arrayIndeks, circleSize: UIScreen.main.bounds.width/1.25, textArray: $textArray)
+                    WheelView(degree: $degree, array: $arrayIndeks, circleSize: UIScreen.main.bounds.width/1.25)
                         .offset(y: -60)
                         .shadow(color: .white, radius: 4, x: 0, y: 0)
                     Triangle()
@@ -68,9 +67,7 @@ struct ContentView: View {
                             if arrayIndeks.count == 0 {
                                 resetData()
                             }
-                            
                         }))
-                        
                     }
                 }
                 
@@ -141,7 +138,9 @@ struct ContentView: View {
     
     func moveWheel() {
         let randomInt = Int.random(in: 0 ..< arrayIndeks.count)
-            chosenIndex = randomInt
+        chosenIndex = randomInt
+        arrayIndeks.swapAt(0, chosenIndex)
+        chosenIndex = 0
         for _ in 0 ..< 100 {
             withAnimation(.spring(response: 0.55, dampingFraction: 0.83, blendDuration: 0.5)){
                 

@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct WheelView: View {
-    @State var radius: Double = 150 // Circle Radius
+    @State private var radius: Double = 150 // Circle Radius
     
-    @Binding var chosenIndex: Int // Index of the chosen element
+//    @Binding var chosenIndex: Int // Index of the chosen element
+    @State private var chosenIndex: Int = 0
+    
     @Binding var degree: Double // Degree of circle
     @Binding var array: [theValue] // Element showed in the circle
     let circleSize: Double
-    @Binding var textArray: [Text]
     
     var body: some View {
         ZStack {
@@ -40,8 +41,7 @@ struct WheelView: View {
                     Text("\(array[index].val)")
                         .rotationEffect(Angle(degrees: degree))
                         .offset(x: xOffset, y: yOffset)
-//                        .offset(x: chosenIndex == index ? 120 : xOffset, y: chosenIndex == index ? 0 : yOffset)
-                        .font(Font.system(chosenIndex == index ? .largeTitle : .title, design: .monospaced))
+                        .font(Font.system(chosenIndex == index ? .largeTitle : .title2, design: .monospaced))
                 }
                 
             }
@@ -49,7 +49,6 @@ struct WheelView: View {
             .onAppear() {
                 radius = circleSize/2 - 30 // 30 is for padding
             }
-            // MARK: WHEEL STACK - END
             
         }
         .frame(width: circleSize, height: circleSize)
