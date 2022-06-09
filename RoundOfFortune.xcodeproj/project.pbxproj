@@ -14,6 +14,7 @@
 		4E0DB87B2850393A00E7A0B2 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0DB87A2850393A00E7A0B2 /* Triangle.swift */; };
 		4E768B6A2834F06600029ED2 /* WheelView-value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E768B692834F06600029ED2 /* WheelView-value.swift */; };
 		4E768B6E2834F10E00029ED2 /* WheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E768B6D2834F10E00029ED2 /* WheelView.swift */; };
+		4EEDBDBE2851AE6E0099E18D /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEDBDBD2851AE6E0099E18D /* ResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		4E0DB87A2850393A00E7A0B2 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 		4E768B692834F06600029ED2 /* WheelView-value.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WheelView-value.swift"; sourceTree = "<group>"; };
 		4E768B6D2834F10E00029ED2 /* WheelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelView.swift; sourceTree = "<group>"; };
+		4EEDBDBD2851AE6E0099E18D /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				4E0DB87A2850393A00E7A0B2 /* Triangle.swift */,
 				4E768B692834F06600029ED2 /* WheelView-value.swift */,
 				4E768B6D2834F10E00029ED2 /* WheelView.swift */,
+				4EEDBDBD2851AE6E0099E18D /* ResultView.swift */,
 				4E0BD200280DB18D0004F216 /* Assets.xcassets */,
 				4E0BD202280DB18D0004F216 /* Preview Content */,
 			);
@@ -151,6 +154,7 @@
 				4E768B6E2834F10E00029ED2 /* WheelView.swift in Sources */,
 				4E0DB87B2850393A00E7A0B2 /* Triangle.swift in Sources */,
 				4E0BD1FD280DB18B0004F216 /* RoundOfFortuneApp.swift in Sources */,
+				4EEDBDBE2851AE6E0099E18D /* ResultView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
