@@ -25,7 +25,6 @@ struct ContentView: View {
     @State private var result = ""
     
     var body: some View {
-        NavigationView {
             ZStack() {
                 Color.orange.opacity(0.4).ignoresSafeArea()
                     .hueRotation(Angle(degrees: degree))
@@ -47,8 +46,8 @@ struct ContentView: View {
                                 moveWheel()
                                 //                        }
                                 DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-//                                    showAlert = true
-                                    showingResult = true
+                                    showAlert = true
+//                                    showingResult = true
                                 }
                                 
                                 
@@ -142,7 +141,6 @@ struct ContentView: View {
                 
             }
         }
-    }
     
     func moveWheel() {
         let randomInt = Int.random(in: 0 ..< arrayIndeks.count)
