@@ -46,8 +46,8 @@ struct ContentView: View {
                                 moveWheel()
                                 //                        }
                                 DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                                    showAlert = true
-//                                    showingResult = true
+//                                    showAlert = true
+                                    showingResult = true
                                 }
                                 
                                 
