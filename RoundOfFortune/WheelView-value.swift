@@ -8,11 +8,7 @@
 import Foundation
 import UIKit
 
+// MARK: Create object that can be used to add the option value in the circle
 struct theValue: Equatable, Hashable{
-    let id = UUID()
     let val : String
-    var xOffset : CGFloat
-    var yOffset : CGFloat
-    
-    
 }

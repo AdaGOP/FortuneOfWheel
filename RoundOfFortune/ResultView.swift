@@ -7,15 +7,20 @@
 
 import SwiftUI
 
+// MARK: Create Class to display the result
 struct ResultView: View {
-    
+    // STEP 1: Create a two-way connection between a property that stores data, and a view that displays and changes the data
     @Binding var result: String
     @Binding var optionsListWithIndex: [Int : String]
     @Binding var arrayIndeks: [theValue]
     @Binding var valueIndex: Int
+    
+    // STEP 2: Set property wrapper to dismiss the view
     @Environment(\.presentationMode) var presentationMode
     
+    // STEP 3: Configure the view
     var body: some View {
+        // MARK: Create view that arranges image, text, and button in vertical line
         VStack{
             Image("congrats")
                 .resizable()
@@ -28,7 +33,6 @@ struct ResultView: View {
             Spacer()
                 .frame(height: 30)
             Button {
-                print("back")
                 presentationMode.wrappedValue.dismiss()
                 optionsListWithIndex.removeValue(forKey: Int(arrayIndeks[0].val) ?? 0)
                 arrayIndeks.remove(at: 0)

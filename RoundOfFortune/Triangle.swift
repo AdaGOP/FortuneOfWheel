@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+// MARK: Create custom triangle shape
 struct Triangle: Shape {
     func path(in rect: CGRect) -> Path {
         var path = Path()
