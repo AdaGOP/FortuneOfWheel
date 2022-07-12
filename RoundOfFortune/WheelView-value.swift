@@ -9,6 +9,8 @@ import Foundation
 import UIKit
 
 // MARK: Create object that can be used to add the option value in the circle
-struct theValue: Equatable, Hashable{
+struct theValue: Identifiable {
+    var id = UUID()
+    //} Equatable, Hashable{
     let val : String
 }

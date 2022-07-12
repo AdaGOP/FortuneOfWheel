@@ -14,8 +14,8 @@ struct WheelView: View {
     @State private var chosenIndex: Int = 0
     
     // STEP 2: Create a two-way connection between a property that stores data, and a view that displays and changes the data
-    @Binding var degree: Double // Rotation degree towards circle's animation
-    @Binding var array: [theValue] // Element showed in the circle
+    var degree: Double // Rotation degree towards circle's animation
+    var array: [theValue] // Element showed in the circle
     
     // STEP 3: Set constant parameter value for the size of the circle view, it is required when the WheelView is called
     let circleSize: Double
