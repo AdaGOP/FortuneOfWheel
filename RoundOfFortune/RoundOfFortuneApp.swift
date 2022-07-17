@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct RoundOfFortuneApp: App {
+//    @EnvironmentObject var mySettings = RoundOfFortuneSettings
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FortuneLandingView().environmentObject(RoundOfFortuneSettings())
         }
     }
 }

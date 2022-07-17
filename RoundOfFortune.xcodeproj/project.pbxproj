@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BC09A2B288487060062C5F9 /* FortuneLandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC09A2A288487060062C5F9 /* FortuneLandingView.swift */; };
+		1BC09A2D28848E460062C5F9 /* AddOptionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC09A2C28848E460062C5F9 /* AddOptionListView.swift */; };
+		1BC09A2F288491EE0062C5F9 /* PlayWheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC09A2E288491EE0062C5F9 /* PlayWheelView.swift */; };
+		1BC09A31288495660062C5F9 /* RoundOfFortuneSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC09A30288495660062C5F9 /* RoundOfFortuneSettings.swift */; };
+		1BE017032884A6290043F751 /* OptionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE017022884A6290043F751 /* OptionListView.swift */; };
 		4E0BD1FD280DB18B0004F216 /* RoundOfFortuneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0BD1FC280DB18B0004F216 /* RoundOfFortuneApp.swift */; };
 		4E0BD1FF280DB18B0004F216 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0BD1FE280DB18B0004F216 /* ContentView.swift */; };
 		4E0BD201280DB18D0004F216 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E0BD200280DB18D0004F216 /* Assets.xcassets */; };
@@ -18,6 +23,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BC09A2A288487060062C5F9 /* FortuneLandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneLandingView.swift; sourceTree = "<group>"; };
+		1BC09A2C28848E460062C5F9 /* AddOptionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOptionListView.swift; sourceTree = "<group>"; };
+		1BC09A2E288491EE0062C5F9 /* PlayWheelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayWheelView.swift; sourceTree = "<group>"; };
+		1BC09A30288495660062C5F9 /* RoundOfFortuneSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundOfFortuneSettings.swift; sourceTree = "<group>"; };
+		1BE017022884A6290043F751 /* OptionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionListView.swift; sourceTree = "<group>"; };
 		4E0BD1F9280DB18B0004F216 /* RoundOfFortune.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoundOfFortune.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E0BD1FC280DB18B0004F216 /* RoundOfFortuneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundOfFortuneApp.swift; sourceTree = "<group>"; };
 		4E0BD1FE280DB18B0004F216 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,7 +70,12 @@
 			isa = PBXGroup;
 			children = (
 				4E0BD1FC280DB18B0004F216 /* RoundOfFortuneApp.swift */,
+				1BC09A30288495660062C5F9 /* RoundOfFortuneSettings.swift */,
+				1BC09A2A288487060062C5F9 /* FortuneLandingView.swift */,
 				4E0BD1FE280DB18B0004F216 /* ContentView.swift */,
+				1BC09A2E288491EE0062C5F9 /* PlayWheelView.swift */,
+				1BC09A2C28848E460062C5F9 /* AddOptionListView.swift */,
+				1BE017022884A6290043F751 /* OptionListView.swift */,
 				4E0DB87A2850393A00E7A0B2 /* Triangle.swift */,
 				4E768B692834F06600029ED2 /* WheelView-value.swift */,
 				4E768B6D2834F10E00029ED2 /* WheelView.swift */,
@@ -151,10 +166,15 @@
 			files = (
 				4E0BD1FF280DB18B0004F216 /* ContentView.swift in Sources */,
 				4E768B6A2834F06600029ED2 /* WheelView-value.swift in Sources */,
+				1BC09A2B288487060062C5F9 /* FortuneLandingView.swift in Sources */,
+				1BC09A31288495660062C5F9 /* RoundOfFortuneSettings.swift in Sources */,
 				4E768B6E2834F10E00029ED2 /* WheelView.swift in Sources */,
 				4E0DB87B2850393A00E7A0B2 /* Triangle.swift in Sources */,
 				4E0BD1FD280DB18B0004F216 /* RoundOfFortuneApp.swift in Sources */,
+				1BC09A2F288491EE0062C5F9 /* PlayWheelView.swift in Sources */,
+				1BE017032884A6290043F751 /* OptionListView.swift in Sources */,
 				4EEDBDBE2851AE6E0099E18D /* ResultView.swift in Sources */,
+				1BC09A2D28848E460062C5F9 /* AddOptionListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +303,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RoundOfFortune/Preview Content\"";
-				DEVELOPMENT_TEAM = JSB449F8V6;
+				DEVELOPMENT_TEAM = KHN5V927Z7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -313,7 +333,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RoundOfFortune/Preview Content\"";
-				DEVELOPMENT_TEAM = JSB449F8V6;
+				DEVELOPMENT_TEAM = KHN5V927Z7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
