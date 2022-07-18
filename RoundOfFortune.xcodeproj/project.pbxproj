@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B5981802885C53200AB7861 /* WheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E768B6D2834F10E00029ED2 /* WheelView.swift */; };
+		1B5981812885C53200AB7861 /* FortuneLandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC09A2A288487060062C5F9 /* FortuneLandingView.swift */; };
+		1B5981822885C53200AB7861 /* AddOptionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC09A2C28848E460062C5F9 /* AddOptionListView.swift */; };
+		1B5981832885C53200AB7861 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEDBDBD2851AE6E0099E18D /* ResultView.swift */; };
+		1B5981842885C53200AB7861 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E0BD200280DB18D0004F216 /* Assets.xcassets */; };
+		1B5981852885C53200AB7861 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E0BD203280DB18D0004F216 /* Preview Assets.xcassets */; };
+		1B5981862885C53200AB7861 /* PlayWheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC09A2E288491EE0062C5F9 /* PlayWheelView.swift */; };
+		1B5981872885C53200AB7861 /* OptionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE017022884A6290043F751 /* OptionListView.swift */; };
+		1B5981882885C53200AB7861 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0DB87A2850393A00E7A0B2 /* Triangle.swift */; };
+		1B5981892885C53200AB7861 /* RoundOfFortuneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0BD1FC280DB18B0004F216 /* RoundOfFortuneApp.swift */; };
+		1B59818A2885C53200AB7861 /* RoundOfFortuneSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC09A30288495660062C5F9 /* RoundOfFortuneSettings.swift */; };
+		1B59818B2885C53200AB7861 /* WheelView-value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E768B692834F06600029ED2 /* WheelView-value.swift */; };
+		1B59818D2885C54E00AB7861 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B59818C2885C54E00AB7861 /* ContentView.swift */; };
 		1BC09A2B288487060062C5F9 /* FortuneLandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC09A2A288487060062C5F9 /* FortuneLandingView.swift */; };
 		1BC09A2D28848E460062C5F9 /* AddOptionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC09A2C28848E460062C5F9 /* AddOptionListView.swift */; };
 		1BC09A2F288491EE0062C5F9 /* PlayWheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC09A2E288491EE0062C5F9 /* PlayWheelView.swift */; };
@@ -23,6 +36,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B5981712885C50900AB7861 /* RoundOfFortuneMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoundOfFortuneMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B59817C2885C50B00AB7861 /* RoundOfFortuneMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RoundOfFortuneMac.entitlements; sourceTree = "<group>"; };
+		1B59818C2885C54E00AB7861 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1BC09A2A288487060062C5F9 /* FortuneLandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneLandingView.swift; sourceTree = "<group>"; };
 		1BC09A2C28848E460062C5F9 /* AddOptionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOptionListView.swift; sourceTree = "<group>"; };
 		1BC09A2E288491EE0062C5F9 /* PlayWheelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayWheelView.swift; sourceTree = "<group>"; };
@@ -40,6 +56,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1B59816E2885C50900AB7861 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4E0BD1F6280DB18B0004F216 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -50,10 +73,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B5981722885C50900AB7861 /* RoundOfFortuneMac */ = {
+			isa = PBXGroup;
+			children = (
+				1B59818E2885C5D000AB7861 /* Preview Content */,
+				1B59818C2885C54E00AB7861 /* ContentView.swift */,
+				1B59817C2885C50B00AB7861 /* RoundOfFortuneMac.entitlements */,
+			);
+			path = RoundOfFortuneMac;
+			sourceTree = "<group>";
+		};
+		1B59818E2885C5D000AB7861 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		4E0BD1F0280DB18B0004F216 = {
 			isa = PBXGroup;
 			children = (
 				4E0BD1FB280DB18B0004F216 /* RoundOfFortune */,
+				1B5981722885C50900AB7861 /* RoundOfFortuneMac */,
 				4E0BD1FA280DB18B0004F216 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				4E0BD1F9280DB18B0004F216 /* RoundOfFortune.app */,
+				1B5981712885C50900AB7861 /* RoundOfFortuneMac.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +139,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1B5981702885C50900AB7861 /* RoundOfFortuneMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B59817D2885C50B00AB7861 /* Build configuration list for PBXNativeTarget "RoundOfFortuneMac" */;
+			buildPhases = (
+				1B59816D2885C50900AB7861 /* Sources */,
+				1B59816E2885C50900AB7861 /* Frameworks */,
+				1B59816F2885C50900AB7861 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoundOfFortuneMac;
+			productName = RoundOfFortuneMac;
+			productReference = 1B5981712885C50900AB7861 /* RoundOfFortuneMac.app */;
+			productType = "com.apple.product-type.application";
+		};
 		4E0BD1F8280DB18B0004F216 /* RoundOfFortune */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E0BD207280DB18D0004F216 /* Build configuration list for PBXNativeTarget "RoundOfFortune" */;
@@ -121,9 +180,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1330;
+				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
+					1B5981702885C50900AB7861 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
 					4E0BD1F8280DB18B0004F216 = {
 						CreatedOnToolsVersion = 13.3;
 					};
@@ -143,11 +205,21 @@
 			projectRoot = "";
 			targets = (
 				4E0BD1F8280DB18B0004F216 /* RoundOfFortune */,
+				1B5981702885C50900AB7861 /* RoundOfFortuneMac */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1B59816F2885C50900AB7861 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B5981852885C53200AB7861 /* Preview Assets.xcassets in Resources */,
+				1B5981842885C53200AB7861 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4E0BD1F7280DB18B0004F216 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -160,6 +232,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1B59816D2885C50900AB7861 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B5981862885C53200AB7861 /* PlayWheelView.swift in Sources */,
+				1B5981802885C53200AB7861 /* WheelView.swift in Sources */,
+				1B59818D2885C54E00AB7861 /* ContentView.swift in Sources */,
+				1B5981822885C53200AB7861 /* AddOptionListView.swift in Sources */,
+				1B5981882885C53200AB7861 /* Triangle.swift in Sources */,
+				1B5981812885C53200AB7861 /* FortuneLandingView.swift in Sources */,
+				1B5981832885C53200AB7861 /* ResultView.swift in Sources */,
+				1B59818A2885C53200AB7861 /* RoundOfFortuneSettings.swift in Sources */,
+				1B5981872885C53200AB7861 /* OptionListView.swift in Sources */,
+				1B59818B2885C53200AB7861 /* WheelView-value.swift in Sources */,
+				1B5981892885C53200AB7861 /* RoundOfFortuneApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4E0BD1F5280DB18B0004F216 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -181,6 +271,64 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		1B59817E2885C50B00AB7861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RoundOfFortuneMac/RoundOfFortuneMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RoundOfFortuneMac/Preview Content\"";
+				DEVELOPMENT_TEAM = KHN5V927Z7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.especiallynew.RoundOfFortuneMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1B59817F2885C50B00AB7861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RoundOfFortuneMac/RoundOfFortuneMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RoundOfFortuneMac/Preview Content\"";
+				DEVELOPMENT_TEAM = KHN5V927Z7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.especiallynew.RoundOfFortuneMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		4E0BD205280DB18D0004F216 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -358,6 +506,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1B59817D2885C50B00AB7861 /* Build configuration list for PBXNativeTarget "RoundOfFortuneMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B59817E2885C50B00AB7861 /* Debug */,
+				1B59817F2885C50B00AB7861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4E0BD1F4280DB18B0004F216 /* Build configuration list for PBXProject "RoundOfFortune" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
