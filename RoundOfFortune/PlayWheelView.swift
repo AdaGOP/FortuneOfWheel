@@ -23,45 +23,52 @@ struct PlayWheelView: View {
                 .hueRotation(Angle(degrees: degree))
             
             // MARK: Create view that arranges the views in vertical line
-            VStack(alignment: .center, spacing: 10){
-                /// Set blank space
-                //                Spacer()
-                //                    .frame(height: 100)
-                
-                // MARK: Create view that overlays WheelView, Triangle, and Circle Button
-                ZStack(){
-                    WheelView(degree: $degree, array: $mySettings.arrayIndeks, circleSize: UIScreen.main.bounds.width/1.25)
-                    //                        .offset(y: -60)
-                        .shadow(color: .white, radius: 4, x: 0, y: 0)
-                    Triangle()
-                        .fill(.red)
-                        .frame(width: UIScreen.main.bounds.width / 5, height: UIScreen.main.bounds.height / 14, alignment: .trailing)
-                        .offset(x:0, y: UIScreen.main.bounds.width/2.3)
-                        .rotationEffect(.degrees(-90))
+            GeometryReader { geometry in
+#if !os(macOS)
+                let bounds = UIScreen.main.bounds
+#else
+                let bounds = geometry.size//NSScreen.main?.visibleFrame.size
+#endif
+                VStack(alignment: .center, spacing: 10){
+                    /// Set blank space
+                    //                Spacer()
+                    //                    .frame(height: 100)
                     
-                    Button {
-                        if mySettings.arrayIndeks.count != 0 {
-                            moveWheel()
-                            //                        }
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                                showingResult = true
+                    // MARK: Create view that overlays WheelView, Triangle, and Circle Button
+                    
+                    ZStack(){
+                        
+                        WheelView(degree: $degree, array: $mySettings.arrayIndeks, circleSize: (bounds.width)/1.25)
+                        //                        .offset(y: -60)
+                            .shadow(color: .white, radius: 4, x: 0, y: 0)
+                        Triangle()
+                            .fill(.red)
+                            .frame(width: (bounds.width) / 5, height: (bounds.height) / 14, alignment: .trailing)
+                            .offset(x:0, y: (bounds.width)/2.3)
+                            .rotationEffect(.degrees(-90))
+                        
+                        Button {
+                            if mySettings.arrayIndeks.count != 0 {
+                                moveWheel()
+                                //                        }
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                    showingResult = true
+                                }
                             }
-                            
-                            
+                        } label: {
+                            Text(mySettings.arrayIndeks.count != 0 ? "Play" : "Add data below")
+                                .font(mySettings.arrayIndeks.count != 0 ? .title2 : .subheadline)
                         }
-                    } label: {
-                        Text(mySettings.arrayIndeks.count != 0 ? "Play" : "Add data below")
-                            .font(mySettings.arrayIndeks.count != 0 ? .title2 : .subheadline)
-                    }
-                    .padding()
-                    .frame(width: UIScreen.main.bounds.width/4, height: UIScreen.main.bounds.width/4, alignment: .center)
-                    .background(.white)
-                    .foregroundColor(.orange)
-                    .clipShape(Circle())
-                }.navigationTitle("Wheel Of Fortune")
-                    .popover(isPresented: $showingResult) {
-                        ResultView(result: $result, optionsListWithIndex: $mySettings.optionsListWithIndex, arrayIndeks: $mySettings.arrayIndeks, valueIndex: $mySettings.valueIndex)
-                    }
+                        .padding()
+                        .frame(width: (bounds.width)/4, height: (bounds.width)/4, alignment: .center)
+                        .background(.white)
+                        .foregroundColor(.orange)
+                        .clipShape(Circle())
+                    }.navigationTitle("Wheel Of Fortune")
+                        .sheet(isPresented: $showingResult) {
+                            ResultView(result: $result, optionsListWithIndex: $mySettings.optionsListWithIndex, arrayIndeks: $mySettings.arrayIndeks, valueIndex: $mySettings.valueIndex).frame(width: bounds.width, height: bounds.height, alignment: .center)
+                        }
+                }
             }
         }
     }
@@ -83,9 +90,10 @@ struct PlayWheelView: View {
     }
 }
 
-
+#if DEBUG
 struct PlayWheelView_Previews: PreviewProvider {
     static var previews: some View {
         PlayWheelView().environmentObject(RoundOfFortuneSettings())
     }
 }
+#endif

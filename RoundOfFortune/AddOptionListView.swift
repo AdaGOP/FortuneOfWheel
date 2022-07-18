@@ -76,9 +76,10 @@ struct AddOptionListView: View {
         mySettings.valueIndex = 0
     }
 }
-
+#if DEBUG
 struct AddOptionListView_Previews: PreviewProvider {
     static var previews: some View {
         AddOptionListView().environmentObject(RoundOfFortuneSettings())
     }
 }
+#endif
