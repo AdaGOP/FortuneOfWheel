@@ -9,30 +9,10 @@ import SwiftUI
 import UIKit
 import Combine
 
-class ReactiveSampleViewModel: ObservableObject{
-    
-    @Published var users: [String] = []
-    private let network = NetworkManager()
-    
-    public func fetchUser(){
-        network.prefetchOptionsData { fetchedUsers in
-            self.users = fetchedUsers.map { $0.name }
-        }
-    }
-    
-    public func addUser(with newUser: String){
-        // Business Logic to add user to the database
-        // This might consists connection with Coredata / CloudKit / etc
-        users.append(newUser)
-    }
-    
-}
-
-
 class ReactiveSampleViewController: UIViewController{
     
     let viewModel: ReactiveSampleViewModel = ReactiveSampleViewModel()
-    var cancelables: Set<AnyCancellable> = []
+    
     
     //View
     lazy var textfield: UITextField = {
@@ -64,7 +44,6 @@ class ReactiveSampleViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        setupBindingUI()
         viewModel.fetchUser()
     }
     
@@ -86,13 +65,10 @@ class ReactiveSampleViewController: UIViewController{
             addBtn.rightAnchor.constraint(equalTo: textfield.rightAnchor, constant: -5),
             addBtn.bottomAnchor.constraint(equalTo: mainLabel.topAnchor,constant: 0)
         ])
+        
+        mainLabel.text = "\(viewModel.users)"
     }
     
-    private func setupBindingUI(){
-        viewModel.$users.sink { newUsers in
-            self.updateUI(with: newUsers)
-        }.store(in: &cancelables)
-    }
     
     
     // View Logic
@@ -102,13 +78,28 @@ class ReactiveSampleViewController: UIViewController{
         textfield.resignFirstResponder()
         textfield.text?.removeAll()
     }
-    
-    private func updateUI(with strings: [String]){
-        mainLabel.text = "\(strings)"
-    }
-
 }
 
+
+
+class ReactiveSampleViewModel{
+    
+    var users: [String] = []
+    private let network = NetworkManager()
+    
+    public func fetchUser(){
+        network.prefetchOptionsData { fetchedUsers in
+            self.users = fetchedUsers.map { $0.name }
+        }
+    }
+    
+    public func addUser(with newUser: String){
+        // Business Logic to add user to the database
+        // This might consists connection with Coredata / CloudKit / etc
+        users.append(newUser)
+    }
+    
+}
 
 
 

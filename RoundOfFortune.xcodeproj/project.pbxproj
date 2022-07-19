@@ -91,6 +91,7 @@
 		7D44859E28699EC600AD95E2 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				7D87960B2886AA1200850852 /* Learn Reactive (Demo Only) */,
 				7D44859F28699ED700AD95E2 /* Wheel of Names */,
 			);
 			path = Features;
@@ -99,7 +100,6 @@
 		7D44859F28699ED700AD95E2 /* Wheel of Names */ = {
 			isa = PBXGroup;
 			children = (
-				7D87960B2886AA1200850852 /* Learn Reactive */,
 				7D4485A028699EF100AD95E2 /* MainWheel */,
 				7D4485A128699EFA00AD95E2 /* Wheel Result */,
 			);
@@ -190,12 +190,12 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
-		7D87960B2886AA1200850852 /* Learn Reactive */ = {
+		7D87960B2886AA1200850852 /* Learn Reactive (Demo Only) */ = {
 			isa = PBXGroup;
 			children = (
 				7D87960C2886AA4400850852 /* ReactiveSampleViewController.swift */,
 			);
-			path = "Learn Reactive";
+			path = "Learn Reactive (Demo Only)";
 			sourceTree = "<group>";
 		};
 		7DA6118C287AE3EA008B951C /* Math */ = {
