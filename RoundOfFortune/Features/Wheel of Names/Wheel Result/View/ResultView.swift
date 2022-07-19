@@ -10,10 +10,8 @@ import SwiftUI
 // MARK: Create Class to display the result
 struct ResultView: View {
     // STEP 1: Create a two-way connection between a property that stores data, and a view that displays and changes the data
-    @Binding var result: String
-    @Binding var optionsListWithIndex: [Int : String]
-    @Binding var arrayIndeks: [theValue]
-    @Binding var valueIndex: Int
+    var winnerName: String
+    var onDismiss: (()->())?
     
     // STEP 2: Set property wrapper to dismiss the view
     @Environment(\.presentationMode) var presentationMode
@@ -28,31 +26,29 @@ struct ResultView: View {
                 .fixedSize()
             Text("Congratulations!")
                 .font(.headline)
-            Text("\(result) is your fortune!")
+            Text("\(winnerName) is your fortune!")
                 .font(.body)
             Spacer()
                 .frame(height: 30)
             Button {
                 presentationMode.wrappedValue.dismiss()
-                optionsListWithIndex.removeValue(forKey: Int(arrayIndeks[0].val) ?? 0)
-                arrayIndeks.remove(at: 0)
-                
-                if arrayIndeks.count == 0 {
-                    optionsListWithIndex.removeAll()
-                    arrayIndeks.removeAll()
-                    valueIndex = 0
-                }
+                onDismiss?()
             } label: {
                 Text("OK")
             }
-            .padding(.top, 8)
-            .padding(.bottom, 8)
-            .padding(.leading, 30)
-            .padding(.trailing, 30)
+            .frame(
+                width: UIScreen.main.bounds.width * 0.6,
+                height: 50)
             .background(.blue)
             .foregroundColor(.white)
             .cornerRadius(20)
 
         }
+    }
+}
+
+struct ResultView_preview: PreviewProvider {
+    static var previews: some View {
+        ResultView(winnerName: "Octa")
     }
 }
