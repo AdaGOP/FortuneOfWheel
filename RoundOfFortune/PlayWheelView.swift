@@ -24,7 +24,7 @@ struct PlayWheelView: View {
             
             // MARK: Create view that arranges the views in vertical line
             GeometryReader { geometry in
-#if !os(macOS)
+#if !os(macOS) && !os(watchOS)
                 let bounds = UIScreen.main.bounds
 #else
                 let bounds = geometry.size//NSScreen.main?.visibleFrame.size

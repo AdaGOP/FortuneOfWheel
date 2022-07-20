@@ -22,10 +22,18 @@ struct FortuneLandingView: View {
         } else {
             AppSidebarNavigation()
         }
-#elseif os(watchOS)
-        AppTabNavigation()
 #elseif os(tvOS)
         AppTabNavigation()
+#elseif os(watchOS)
+        AddOptionListView()
+            .environmentObject(mySettings)
+#if !os(macOS) && !os(watchOS)
+            .listStyle(.insetGrouped)
+#elseif os(watchOS)
+            .listStyle(.automatic)
+#else
+            .listStyle(.inset(alternatesRowBackgrounds: false))
+#endif
 #else
         AppSidebarNavigation()
             .frame(minWidth: 900, maxWidth: .infinity, minHeight: 500, maxHeight: .infinity)
@@ -37,10 +45,13 @@ struct FortuneLandingView: View {
             NavigationView{
                 AddOptionListView()
                     .environmentObject(mySettings)
-#if !os(macOS)
+#if !os(macOS) && !os(watchOS)
                     .listStyle(.insetGrouped)
+#elseif os(watchOS)
+                    .listStyle(.automatic)
 #else
                     .listStyle(.inset(alternatesRowBackgrounds: false))
+
 #endif
             }.tabItem {
                 Label("OptionList", systemImage: "list.number")
@@ -49,8 +60,10 @@ struct FortuneLandingView: View {
             NavigationView{
                 PlayWheelView()
                     .environmentObject(mySettings)
-#if !os(macOS)
+#if !os(macOS) && !os(watchOS)
                     .listStyle(.insetGrouped)
+#elseif os(watchOS)
+                    .listStyle(.automatic)
 #else
                     .listStyle(.inset(alternatesRowBackgrounds: false))
 #endif
@@ -76,9 +89,14 @@ struct FortuneLandingView: View {
                                , label: {
                     Label("Turn Wheel", systemImage: "play.circle")
                 })
-            }.listStyle(.sidebar)
+            }
+#if !os(watchOS)
+            .listStyle(.sidebar)
+#else
+            .listStyle(.automatic)
+#endif
         }
-#if !os(macOS)
+#if !os(macOS) && !os(watchOS)
         .navigationViewStyle(.columns)
 #endif
     }

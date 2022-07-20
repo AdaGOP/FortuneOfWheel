@@ -25,6 +25,25 @@
 		1BC09A2F288491EE0062C5F9 /* PlayWheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC09A2E288491EE0062C5F9 /* PlayWheelView.swift */; };
 		1BC09A31288495660062C5F9 /* RoundOfFortuneSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC09A30288495660062C5F9 /* RoundOfFortuneSettings.swift */; };
 		1BE017032884A6290043F751 /* OptionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE017022884A6290043F751 /* OptionListView.swift */; };
+		2C01BE8D2887BA47000D7DFB /* FortuneLandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC09A2A288487060062C5F9 /* FortuneLandingView.swift */; };
+		2C01BE8E2887BA6F000D7DFB /* PlayWheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC09A2E288491EE0062C5F9 /* PlayWheelView.swift */; };
+		2C01BE8F2887BA72000D7DFB /* AddOptionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC09A2C28848E460062C5F9 /* AddOptionListView.swift */; };
+		2C01BE912887BA94000D7DFB /* OptionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE017022884A6290043F751 /* OptionListView.swift */; };
+		2C01BE922887BA96000D7DFB /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0DB87A2850393A00E7A0B2 /* Triangle.swift */; };
+		2C01BE932887BA99000D7DFB /* WheelView-value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E768B692834F06600029ED2 /* WheelView-value.swift */; };
+		2C01BE942887BA9B000D7DFB /* WheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E768B6D2834F10E00029ED2 /* WheelView.swift */; };
+		2C01BE952887BA9D000D7DFB /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEDBDBD2851AE6E0099E18D /* ResultView.swift */; };
+		2C01BE962887BB15000D7DFB /* RoundOfFortuneSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC09A30288495660062C5F9 /* RoundOfFortuneSettings.swift */; };
+		2CEB1EE328871BA600F6EF20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CEB1EE228871BA600F6EF20 /* Assets.xcassets */; };
+		2CEB1EE928871BA600F6EF20 /* RoundOfFortuneWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2CEB1EE828871BA600F6EF20 /* RoundOfFortuneWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2CEB1EEE28871BA600F6EF20 /* RoundOfFortuneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEB1EED28871BA600F6EF20 /* RoundOfFortuneApp.swift */; };
+		2CEB1EF028871BA600F6EF20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEB1EEF28871BA600F6EF20 /* ContentView.swift */; };
+		2CEB1EF228871BA600F6EF20 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEB1EF128871BA600F6EF20 /* NotificationController.swift */; };
+		2CEB1EF428871BA600F6EF20 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEB1EF328871BA600F6EF20 /* NotificationView.swift */; };
+		2CEB1EF628871BA600F6EF20 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEB1EF528871BA600F6EF20 /* ComplicationController.swift */; };
+		2CEB1EF828871BA700F6EF20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CEB1EF728871BA700F6EF20 /* Assets.xcassets */; };
+		2CEB1EFB28871BA700F6EF20 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CEB1EFA28871BA700F6EF20 /* Preview Assets.xcassets */; };
+		2CEB1F0028871BA700F6EF20 /* RoundOfFortuneWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2CEB1EE028871BA500F6EF20 /* RoundOfFortuneWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4E0BD1FD280DB18B0004F216 /* RoundOfFortuneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0BD1FC280DB18B0004F216 /* RoundOfFortuneApp.swift */; };
 		4E0BD1FF280DB18B0004F216 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0BD1FE280DB18B0004F216 /* ContentView.swift */; };
 		4E0BD201280DB18D0004F216 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E0BD200280DB18D0004F216 /* Assets.xcassets */; };
@@ -35,6 +54,48 @@
 		4EEDBDBE2851AE6E0099E18D /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEDBDBD2851AE6E0099E18D /* ResultView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2CEB1EEA28871BA600F6EF20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E0BD1F1280DB18B0004F216 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CEB1EE728871BA600F6EF20;
+			remoteInfo = "RoundOfFortuneWatch WatchKit Extension";
+		};
+		2CEB1EFE28871BA700F6EF20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E0BD1F1280DB18B0004F216 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CEB1EDF28871BA400F6EF20;
+			remoteInfo = RoundOfFortuneWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2CEB1ED6288719AF00F6EF20 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2CEB1F0028871BA700F6EF20 /* RoundOfFortuneWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CEB1F0428871BA700F6EF20 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2CEB1EE928871BA600F6EF20 /* RoundOfFortuneWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1B5981712885C50900AB7861 /* RoundOfFortuneMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoundOfFortuneMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B59817C2885C50B00AB7861 /* RoundOfFortuneMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RoundOfFortuneMac.entitlements; sourceTree = "<group>"; };
@@ -44,6 +105,18 @@
 		1BC09A2E288491EE0062C5F9 /* PlayWheelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayWheelView.swift; sourceTree = "<group>"; };
 		1BC09A30288495660062C5F9 /* RoundOfFortuneSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundOfFortuneSettings.swift; sourceTree = "<group>"; };
 		1BE017022884A6290043F751 /* OptionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionListView.swift; sourceTree = "<group>"; };
+		2CEB1EE028871BA500F6EF20 /* RoundOfFortuneWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoundOfFortuneWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CEB1EE228871BA600F6EF20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2CEB1EE828871BA600F6EF20 /* RoundOfFortuneWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RoundOfFortuneWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CEB1EED28871BA600F6EF20 /* RoundOfFortuneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundOfFortuneApp.swift; sourceTree = "<group>"; };
+		2CEB1EEF28871BA600F6EF20 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2CEB1EF128871BA600F6EF20 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		2CEB1EF328871BA600F6EF20 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		2CEB1EF528871BA600F6EF20 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		2CEB1EF728871BA700F6EF20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2CEB1EFA28871BA700F6EF20 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2CEB1EFC28871BA700F6EF20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CEB1EFD28871BA700F6EF20 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		4E0BD1F9280DB18B0004F216 /* RoundOfFortune.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoundOfFortune.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E0BD1FC280DB18B0004F216 /* RoundOfFortuneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundOfFortuneApp.swift; sourceTree = "<group>"; };
 		4E0BD1FE280DB18B0004F216 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +130,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		1B59816E2885C50900AB7861 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CEB1EE528871BA600F6EF20 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -90,11 +170,45 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		2CEB1EE128871BA500F6EF20 /* RoundOfFortuneWatch */ = {
+			isa = PBXGroup;
+			children = (
+				2CEB1EE228871BA600F6EF20 /* Assets.xcassets */,
+			);
+			path = RoundOfFortuneWatch;
+			sourceTree = "<group>";
+		};
+		2CEB1EEC28871BA600F6EF20 /* RoundOfFortuneWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2CEB1EED28871BA600F6EF20 /* RoundOfFortuneApp.swift */,
+				2CEB1EEF28871BA600F6EF20 /* ContentView.swift */,
+				2CEB1EF128871BA600F6EF20 /* NotificationController.swift */,
+				2CEB1EF328871BA600F6EF20 /* NotificationView.swift */,
+				2CEB1EF528871BA600F6EF20 /* ComplicationController.swift */,
+				2CEB1EF728871BA700F6EF20 /* Assets.xcassets */,
+				2CEB1EFC28871BA700F6EF20 /* Info.plist */,
+				2CEB1EFD28871BA700F6EF20 /* PushNotificationPayload.apns */,
+				2CEB1EF928871BA700F6EF20 /* Preview Content */,
+			);
+			path = "RoundOfFortuneWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		2CEB1EF928871BA700F6EF20 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2CEB1EFA28871BA700F6EF20 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		4E0BD1F0280DB18B0004F216 = {
 			isa = PBXGroup;
 			children = (
 				4E0BD1FB280DB18B0004F216 /* RoundOfFortune */,
 				1B5981722885C50900AB7861 /* RoundOfFortuneMac */,
+				2CEB1EE128871BA500F6EF20 /* RoundOfFortuneWatch */,
+				2CEB1EEC28871BA600F6EF20 /* RoundOfFortuneWatch WatchKit Extension */,
 				4E0BD1FA280DB18B0004F216 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -104,6 +218,8 @@
 			children = (
 				4E0BD1F9280DB18B0004F216 /* RoundOfFortune.app */,
 				1B5981712885C50900AB7861 /* RoundOfFortuneMac.app */,
+				2CEB1EE028871BA500F6EF20 /* RoundOfFortuneWatch.app */,
+				2CEB1EE828871BA600F6EF20 /* RoundOfFortuneWatch WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,6 +272,40 @@
 			productReference = 1B5981712885C50900AB7861 /* RoundOfFortuneMac.app */;
 			productType = "com.apple.product-type.application";
 		};
+		2CEB1EDF28871BA400F6EF20 /* RoundOfFortuneWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CEB1F0528871BA700F6EF20 /* Build configuration list for PBXNativeTarget "RoundOfFortuneWatch" */;
+			buildPhases = (
+				2CEB1EDE28871BA400F6EF20 /* Resources */,
+				2CEB1F0428871BA700F6EF20 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CEB1EEB28871BA600F6EF20 /* PBXTargetDependency */,
+			);
+			name = RoundOfFortuneWatch;
+			productName = RoundOfFortuneWatch;
+			productReference = 2CEB1EE028871BA500F6EF20 /* RoundOfFortuneWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		2CEB1EE728871BA600F6EF20 /* RoundOfFortuneWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CEB1F0128871BA700F6EF20 /* Build configuration list for PBXNativeTarget "RoundOfFortuneWatch WatchKit Extension" */;
+			buildPhases = (
+				2CEB1EE428871BA600F6EF20 /* Sources */,
+				2CEB1EE528871BA600F6EF20 /* Frameworks */,
+				2CEB1EE628871BA600F6EF20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RoundOfFortuneWatch WatchKit Extension";
+			productName = "RoundOfFortuneWatch WatchKit Extension";
+			productReference = 2CEB1EE828871BA600F6EF20 /* RoundOfFortuneWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		4E0BD1F8280DB18B0004F216 /* RoundOfFortune */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E0BD207280DB18D0004F216 /* Build configuration list for PBXNativeTarget "RoundOfFortune" */;
@@ -163,10 +313,12 @@
 				4E0BD1F5280DB18B0004F216 /* Sources */,
 				4E0BD1F6280DB18B0004F216 /* Frameworks */,
 				4E0BD1F7280DB18B0004F216 /* Resources */,
+				2CEB1ED6288719AF00F6EF20 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2CEB1EFF28871BA700F6EF20 /* PBXTargetDependency */,
 			);
 			name = RoundOfFortune;
 			productName = RoundOfFortune;
@@ -184,6 +336,12 @@
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
 					1B5981702885C50900AB7861 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					2CEB1EDF28871BA400F6EF20 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					2CEB1EE728871BA600F6EF20 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 					4E0BD1F8280DB18B0004F216 = {
@@ -206,6 +364,8 @@
 			targets = (
 				4E0BD1F8280DB18B0004F216 /* RoundOfFortune */,
 				1B5981702885C50900AB7861 /* RoundOfFortuneMac */,
+				2CEB1EDF28871BA400F6EF20 /* RoundOfFortuneWatch */,
+				2CEB1EE728871BA600F6EF20 /* RoundOfFortuneWatch WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -217,6 +377,23 @@
 			files = (
 				1B5981852885C53200AB7861 /* Preview Assets.xcassets in Resources */,
 				1B5981842885C53200AB7861 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CEB1EDE28871BA400F6EF20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CEB1EE328871BA600F6EF20 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CEB1EE628871BA600F6EF20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CEB1EFB28871BA700F6EF20 /* Preview Assets.xcassets in Resources */,
+				2CEB1EF828871BA700F6EF20 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +427,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2CEB1EE428871BA600F6EF20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CEB1EF228871BA600F6EF20 /* NotificationController.swift in Sources */,
+				2C01BE8D2887BA47000D7DFB /* FortuneLandingView.swift in Sources */,
+				2C01BE962887BB15000D7DFB /* RoundOfFortuneSettings.swift in Sources */,
+				2CEB1EF028871BA600F6EF20 /* ContentView.swift in Sources */,
+				2C01BE8E2887BA6F000D7DFB /* PlayWheelView.swift in Sources */,
+				2C01BE952887BA9D000D7DFB /* ResultView.swift in Sources */,
+				2CEB1EF628871BA600F6EF20 /* ComplicationController.swift in Sources */,
+				2C01BE8F2887BA72000D7DFB /* AddOptionListView.swift in Sources */,
+				2C01BE922887BA96000D7DFB /* Triangle.swift in Sources */,
+				2C01BE912887BA94000D7DFB /* OptionListView.swift in Sources */,
+				2CEB1EEE28871BA600F6EF20 /* RoundOfFortuneApp.swift in Sources */,
+				2C01BE942887BA9B000D7DFB /* WheelView.swift in Sources */,
+				2C01BE932887BA99000D7DFB /* WheelView-value.swift in Sources */,
+				2CEB1EF428871BA600F6EF20 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4E0BD1F5280DB18B0004F216 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -270,6 +468,19 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2CEB1EEB28871BA600F6EF20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CEB1EE728871BA600F6EF20 /* RoundOfFortuneWatch WatchKit Extension */;
+			targetProxy = 2CEB1EEA28871BA600F6EF20 /* PBXContainerItemProxy */;
+		};
+		2CEB1EFF28871BA700F6EF20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CEB1EDF28871BA400F6EF20 /* RoundOfFortuneWatch */;
+			targetProxy = 2CEB1EFE28871BA700F6EF20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
 		1B59817E2885C50B00AB7861 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -281,7 +492,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RoundOfFortuneMac/Preview Content\"";
-				DEVELOPMENT_TEAM = KHN5V927Z7;
+				DEVELOPMENT_TEAM = 665XP63X44;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -310,7 +521,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RoundOfFortuneMac/Preview Content\"";
-				DEVELOPMENT_TEAM = KHN5V927Z7;
+				DEVELOPMENT_TEAM = 665XP63X44;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -326,6 +537,120 @@
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2CEB1F0228871BA700F6EF20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RoundOfFortuneWatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 665XP63X44;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "RoundOfFortuneWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "RoundOfFortuneWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = id.khoirunnisa.RoundOfFortune.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		2CEB1F0328871BA700F6EF20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RoundOfFortuneWatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 665XP63X44;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "RoundOfFortuneWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "RoundOfFortuneWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = id.khoirunnisa.RoundOfFortune.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		2CEB1F0628871BA700F6EF20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KHN5V927Z7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = RoundOfFortuneWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = RoundOfFortuneWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = id.khoirunnisa.RoundOfFortune;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = id.khoirunnisa.RoundOfFortune.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		2CEB1F0728871BA700F6EF20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KHN5V927Z7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = RoundOfFortuneWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = RoundOfFortuneWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = id.khoirunnisa.RoundOfFortune;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = id.khoirunnisa.RoundOfFortune.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
 			};
 			name = Release;
 		};
@@ -511,6 +836,24 @@
 			buildConfigurations = (
 				1B59817E2885C50B00AB7861 /* Debug */,
 				1B59817F2885C50B00AB7861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CEB1F0128871BA700F6EF20 /* Build configuration list for PBXNativeTarget "RoundOfFortuneWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CEB1F0228871BA700F6EF20 /* Debug */,
+				2CEB1F0328871BA700F6EF20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CEB1F0528871BA700F6EF20 /* Build configuration list for PBXNativeTarget "RoundOfFortuneWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CEB1F0628871BA700F6EF20 /* Debug */,
+				2CEB1F0728871BA700F6EF20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
