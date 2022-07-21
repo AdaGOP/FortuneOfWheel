@@ -12,6 +12,25 @@
 		1BC09A2F288491EE0062C5F9 /* PlayWheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC09A2E288491EE0062C5F9 /* PlayWheelView.swift */; };
 		1BC09A31288495660062C5F9 /* RoundOfFortuneSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC09A30288495660062C5F9 /* RoundOfFortuneSettings.swift */; };
 		1BE017032884A6290043F751 /* OptionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE017022884A6290043F751 /* OptionListView.swift */; };
+		2CE6FFC42888D7FC00FB4E00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CE6FFC32888D7FC00FB4E00 /* Assets.xcassets */; };
+		2CE6FFCA2888D7FC00FB4E00 /* RoundOfNameWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2CE6FFC92888D7FC00FB4E00 /* RoundOfNameWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2CE6FFCF2888D7FC00FB4E00 /* RoundOfFortuneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE6FFCE2888D7FC00FB4E00 /* RoundOfFortuneApp.swift */; };
+		2CE6FFD12888D7FC00FB4E00 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE6FFD02888D7FC00FB4E00 /* ContentView.swift */; };
+		2CE6FFD32888D7FC00FB4E00 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE6FFD22888D7FC00FB4E00 /* NotificationController.swift */; };
+		2CE6FFD52888D7FC00FB4E00 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE6FFD42888D7FC00FB4E00 /* NotificationView.swift */; };
+		2CE6FFD72888D7FC00FB4E00 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE6FFD62888D7FC00FB4E00 /* ComplicationController.swift */; };
+		2CE6FFD92888D7FD00FB4E00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CE6FFD82888D7FD00FB4E00 /* Assets.xcassets */; };
+		2CE6FFDC2888D7FD00FB4E00 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CE6FFDB2888D7FD00FB4E00 /* Preview Assets.xcassets */; };
+		2CE6FFE12888D7FD00FB4E00 /* RoundOfNameWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2CE6FFC12888D7FA00FB4E00 /* RoundOfNameWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2CE6FFEA2888D81300FB4E00 /* FortuneLandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC09A2A288487060062C5F9 /* FortuneLandingView.swift */; };
+		2CE6FFEB2888D81C00FB4E00 /* PlayWheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC09A2E288491EE0062C5F9 /* PlayWheelView.swift */; };
+		2CE6FFEC2888D81F00FB4E00 /* AddOptionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC09A2C28848E460062C5F9 /* AddOptionListView.swift */; };
+		2CE6FFED2888D82100FB4E00 /* OptionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE017022884A6290043F751 /* OptionListView.swift */; };
+		2CE6FFEE2888D82300FB4E00 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0DB87A2850393A00E7A0B2 /* Triangle.swift */; };
+		2CE6FFEF2888D82500FB4E00 /* WheelView-value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E768B692834F06600029ED2 /* WheelView-value.swift */; };
+		2CE6FFF02888D82800FB4E00 /* WheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E768B6D2834F10E00029ED2 /* WheelView.swift */; };
+		2CE6FFF12888D82A00FB4E00 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEDBDBD2851AE6E0099E18D /* ResultView.swift */; };
+		2CE6FFF22888D87B00FB4E00 /* RoundOfFortuneSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC09A30288495660062C5F9 /* RoundOfFortuneSettings.swift */; };
 		4E0BD1FD280DB18B0004F216 /* RoundOfFortuneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0BD1FC280DB18B0004F216 /* RoundOfFortuneApp.swift */; };
 		4E0BD1FF280DB18B0004F216 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0BD1FE280DB18B0004F216 /* ContentView.swift */; };
 		4E0BD201280DB18D0004F216 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E0BD200280DB18D0004F216 /* Assets.xcassets */; };
@@ -22,12 +41,66 @@
 		4EEDBDBE2851AE6E0099E18D /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEDBDBD2851AE6E0099E18D /* ResultView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2CE6FFCB2888D7FC00FB4E00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E0BD1F1280DB18B0004F216 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CE6FFC82888D7FC00FB4E00;
+			remoteInfo = "RoundOfNameWatch WatchKit Extension";
+		};
+		2CE6FFDF2888D7FD00FB4E00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E0BD1F1280DB18B0004F216 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CE6FFC02888D7FA00FB4E00;
+			remoteInfo = RoundOfNameWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2CE6FFE22888D7FD00FB4E00 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2CE6FFE12888D7FD00FB4E00 /* RoundOfNameWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CE6FFE52888D7FD00FB4E00 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2CE6FFCA2888D7FC00FB4E00 /* RoundOfNameWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1BC09A2A288487060062C5F9 /* FortuneLandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneLandingView.swift; sourceTree = "<group>"; };
 		1BC09A2C28848E460062C5F9 /* AddOptionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOptionListView.swift; sourceTree = "<group>"; };
 		1BC09A2E288491EE0062C5F9 /* PlayWheelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayWheelView.swift; sourceTree = "<group>"; };
 		1BC09A30288495660062C5F9 /* RoundOfFortuneSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundOfFortuneSettings.swift; sourceTree = "<group>"; };
 		1BE017022884A6290043F751 /* OptionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionListView.swift; sourceTree = "<group>"; };
+		2CE6FFC12888D7FA00FB4E00 /* RoundOfNameWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoundOfNameWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CE6FFC32888D7FC00FB4E00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2CE6FFC92888D7FC00FB4E00 /* RoundOfNameWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RoundOfNameWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CE6FFCE2888D7FC00FB4E00 /* RoundOfFortuneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundOfFortuneApp.swift; sourceTree = "<group>"; };
+		2CE6FFD02888D7FC00FB4E00 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2CE6FFD22888D7FC00FB4E00 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		2CE6FFD42888D7FC00FB4E00 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		2CE6FFD62888D7FC00FB4E00 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		2CE6FFD82888D7FD00FB4E00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2CE6FFDB2888D7FD00FB4E00 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2CE6FFDD2888D7FD00FB4E00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CE6FFDE2888D7FD00FB4E00 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		4E0BD1F9280DB18B0004F216 /* RoundOfFortune.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoundOfFortune.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E0BD1FC280DB18B0004F216 /* RoundOfFortuneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundOfFortuneApp.swift; sourceTree = "<group>"; };
 		4E0BD1FE280DB18B0004F216 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +113,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2CE6FFC62888D7FC00FB4E00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4E0BD1F6280DB18B0004F216 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -50,10 +130,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CE6FFC22888D7FB00FB4E00 /* RoundOfNameWatch */ = {
+			isa = PBXGroup;
+			children = (
+				2CE6FFC32888D7FC00FB4E00 /* Assets.xcassets */,
+			);
+			path = RoundOfNameWatch;
+			sourceTree = "<group>";
+		};
+		2CE6FFCD2888D7FC00FB4E00 /* RoundOfNameWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2CE6FFCE2888D7FC00FB4E00 /* RoundOfFortuneApp.swift */,
+				2CE6FFD02888D7FC00FB4E00 /* ContentView.swift */,
+				2CE6FFD22888D7FC00FB4E00 /* NotificationController.swift */,
+				2CE6FFD42888D7FC00FB4E00 /* NotificationView.swift */,
+				2CE6FFD62888D7FC00FB4E00 /* ComplicationController.swift */,
+				2CE6FFD82888D7FD00FB4E00 /* Assets.xcassets */,
+				2CE6FFDD2888D7FD00FB4E00 /* Info.plist */,
+				2CE6FFDE2888D7FD00FB4E00 /* PushNotificationPayload.apns */,
+				2CE6FFDA2888D7FD00FB4E00 /* Preview Content */,
+			);
+			path = "RoundOfNameWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		2CE6FFDA2888D7FD00FB4E00 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2CE6FFDB2888D7FD00FB4E00 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		4E0BD1F0280DB18B0004F216 = {
 			isa = PBXGroup;
 			children = (
 				4E0BD1FB280DB18B0004F216 /* RoundOfFortune */,
+				2CE6FFC22888D7FB00FB4E00 /* RoundOfNameWatch */,
+				2CE6FFCD2888D7FC00FB4E00 /* RoundOfNameWatch WatchKit Extension */,
 				4E0BD1FA280DB18B0004F216 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				4E0BD1F9280DB18B0004F216 /* RoundOfFortune.app */,
+				2CE6FFC12888D7FA00FB4E00 /* RoundOfNameWatch.app */,
+				2CE6FFC92888D7FC00FB4E00 /* RoundOfNameWatch WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +213,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2CE6FFC02888D7FA00FB4E00 /* RoundOfNameWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CE6FFE92888D7FD00FB4E00 /* Build configuration list for PBXNativeTarget "RoundOfNameWatch" */;
+			buildPhases = (
+				2CE6FFBF2888D7FA00FB4E00 /* Resources */,
+				2CE6FFE52888D7FD00FB4E00 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CE6FFCC2888D7FC00FB4E00 /* PBXTargetDependency */,
+			);
+			name = RoundOfNameWatch;
+			productName = RoundOfNameWatch;
+			productReference = 2CE6FFC12888D7FA00FB4E00 /* RoundOfNameWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		2CE6FFC82888D7FC00FB4E00 /* RoundOfNameWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CE6FFE82888D7FD00FB4E00 /* Build configuration list for PBXNativeTarget "RoundOfNameWatch WatchKit Extension" */;
+			buildPhases = (
+				2CE6FFC52888D7FC00FB4E00 /* Sources */,
+				2CE6FFC62888D7FC00FB4E00 /* Frameworks */,
+				2CE6FFC72888D7FC00FB4E00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RoundOfNameWatch WatchKit Extension";
+			productName = "RoundOfNameWatch WatchKit Extension";
+			productReference = 2CE6FFC92888D7FC00FB4E00 /* RoundOfNameWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		4E0BD1F8280DB18B0004F216 /* RoundOfFortune */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E0BD207280DB18D0004F216 /* Build configuration list for PBXNativeTarget "RoundOfFortune" */;
@@ -104,10 +254,12 @@
 				4E0BD1F5280DB18B0004F216 /* Sources */,
 				4E0BD1F6280DB18B0004F216 /* Frameworks */,
 				4E0BD1F7280DB18B0004F216 /* Resources */,
+				2CE6FFE22888D7FD00FB4E00 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2CE6FFE02888D7FD00FB4E00 /* PBXTargetDependency */,
 			);
 			name = RoundOfFortune;
 			productName = RoundOfFortune;
@@ -121,9 +273,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1330;
+				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
+					2CE6FFC02888D7FA00FB4E00 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					2CE6FFC82888D7FC00FB4E00 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
 					4E0BD1F8280DB18B0004F216 = {
 						CreatedOnToolsVersion = 13.3;
 					};
@@ -143,11 +301,30 @@
 			projectRoot = "";
 			targets = (
 				4E0BD1F8280DB18B0004F216 /* RoundOfFortune */,
+				2CE6FFC02888D7FA00FB4E00 /* RoundOfNameWatch */,
+				2CE6FFC82888D7FC00FB4E00 /* RoundOfNameWatch WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2CE6FFBF2888D7FA00FB4E00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CE6FFC42888D7FC00FB4E00 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CE6FFC72888D7FC00FB4E00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CE6FFDC2888D7FD00FB4E00 /* Preview Assets.xcassets in Resources */,
+				2CE6FFD92888D7FD00FB4E00 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4E0BD1F7280DB18B0004F216 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -160,6 +337,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2CE6FFC52888D7FC00FB4E00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CE6FFEB2888D81C00FB4E00 /* PlayWheelView.swift in Sources */,
+				2CE6FFD32888D7FC00FB4E00 /* NotificationController.swift in Sources */,
+				2CE6FFD12888D7FC00FB4E00 /* ContentView.swift in Sources */,
+				2CE6FFEF2888D82500FB4E00 /* WheelView-value.swift in Sources */,
+				2CE6FFEC2888D81F00FB4E00 /* AddOptionListView.swift in Sources */,
+				2CE6FFEA2888D81300FB4E00 /* FortuneLandingView.swift in Sources */,
+				2CE6FFF02888D82800FB4E00 /* WheelView.swift in Sources */,
+				2CE6FFF12888D82A00FB4E00 /* ResultView.swift in Sources */,
+				2CE6FFD72888D7FC00FB4E00 /* ComplicationController.swift in Sources */,
+				2CE6FFCF2888D7FC00FB4E00 /* RoundOfFortuneApp.swift in Sources */,
+				2CE6FFF22888D87B00FB4E00 /* RoundOfFortuneSettings.swift in Sources */,
+				2CE6FFEE2888D82300FB4E00 /* Triangle.swift in Sources */,
+				2CE6FFD52888D7FC00FB4E00 /* NotificationView.swift in Sources */,
+				2CE6FFED2888D82100FB4E00 /* OptionListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4E0BD1F5280DB18B0004F216 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -180,7 +378,134 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2CE6FFCC2888D7FC00FB4E00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CE6FFC82888D7FC00FB4E00 /* RoundOfNameWatch WatchKit Extension */;
+			targetProxy = 2CE6FFCB2888D7FC00FB4E00 /* PBXContainerItemProxy */;
+		};
+		2CE6FFE02888D7FD00FB4E00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CE6FFC02888D7FA00FB4E00 /* RoundOfNameWatch */;
+			targetProxy = 2CE6FFDF2888D7FD00FB4E00 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		2CE6FFE32888D7FD00FB4E00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KHN5V927Z7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = RoundOfNameWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = RoundOfNameWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = id.khoirunnisa.RoundOfFortune;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = id.khoirunnisa.RoundOfFortune.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		2CE6FFE42888D7FD00FB4E00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KHN5V927Z7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = RoundOfNameWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = RoundOfNameWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = id.khoirunnisa.RoundOfFortune;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = id.khoirunnisa.RoundOfFortune.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		2CE6FFE62888D7FD00FB4E00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RoundOfNameWatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 665XP63X44;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "RoundOfNameWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "RoundOfNameWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = id.khoirunnisa.RoundOfFortune.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		2CE6FFE72888D7FD00FB4E00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RoundOfNameWatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 665XP63X44;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "RoundOfNameWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "RoundOfNameWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = id.khoirunnisa.RoundOfFortune.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
 		4E0BD205280DB18D0004F216 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -358,6 +683,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2CE6FFE82888D7FD00FB4E00 /* Build configuration list for PBXNativeTarget "RoundOfNameWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CE6FFE62888D7FD00FB4E00 /* Debug */,
+				2CE6FFE72888D7FD00FB4E00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CE6FFE92888D7FD00FB4E00 /* Build configuration list for PBXNativeTarget "RoundOfNameWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CE6FFE32888D7FD00FB4E00 /* Debug */,
+				2CE6FFE42888D7FD00FB4E00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4E0BD1F4280DB18B0004F216 /* Build configuration list for PBXProject "RoundOfFortune" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

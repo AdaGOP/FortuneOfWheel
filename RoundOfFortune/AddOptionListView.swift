@@ -42,8 +42,11 @@ struct AddOptionListView: View {
                         text: $textOption
                     )
                     .font(.system(size: 15))
+#if !os(watchOS)
                     .textFieldStyle(.roundedBorder)
-                    
+#else
+                    .textFieldStyle(.automatic)
+#endif
                     Button(action: {
                         addOptionItem()
                     }) {

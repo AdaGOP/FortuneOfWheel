@@ -37,7 +37,11 @@ struct FortuneLandingView: View {
             NavigationView{
                 AddOptionListView()
                     .environmentObject(mySettings)
+#if !os(watchOS)
                     .listStyle(.insetGrouped)
+#else
+                    .listStyle(.automatic)
+#endif
             }.tabItem {
                 Label("OptionList", systemImage: "list.number")
             }
@@ -45,7 +49,11 @@ struct FortuneLandingView: View {
             NavigationView{
                 PlayWheelView()
                     .environmentObject(mySettings)
+#if !os(watchOS)
                     .listStyle(.insetGrouped)
+#else
+                    .listStyle(.automatic)
+#endif
             }.tabItem {
                 Label("Turn Wheel", systemImage: "play.circle")
             }
@@ -67,7 +75,12 @@ struct FortuneLandingView: View {
                                , label: {
                     Label("Turn Wheel", systemImage: "play.circle")
                 })
-            }.listStyle(.sidebar)
+            }
+#if !os(watchOS)
+            .listStyle(.sidebar)
+#else
+            .listStyle(.automatic)
+#endif
         }.navigationViewStyle(.stack)
     }
 }
