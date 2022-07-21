@@ -25,15 +25,29 @@ struct FortuneLandingView: View {
 #elseif os(tvOS)
         AppTabNavigation()
 #elseif os(watchOS)
-        AddOptionListView()
-            .environmentObject(mySettings)
-#if !os(macOS) && !os(watchOS)
-            .listStyle(.insetGrouped)
+        VStack {
+            PlayWheelView()
+                .environmentObject(mySettings)
+                .listStyle(.automatic)
+            HStack {
+                Button(action: {
+                    reduceOption()
+                }) {
+                    Image(systemName:"minus")
+                }
+                Button(action: {
+                    addOption()
+                }) {
+                    Image(systemName:"plus")
+
+                }
+            }
+        }
+        
+        
 #elseif os(watchOS)
             .listStyle(.automatic)
-#else
-            .listStyle(.inset(alternatesRowBackgrounds: false))
-#endif
+
 #else
         AppSidebarNavigation()
             .frame(minWidth: 900, maxWidth: .infinity, minHeight: 500, maxHeight: .infinity)
@@ -71,6 +85,18 @@ struct FortuneLandingView: View {
             }.tabItem {
                 Label("Turn Wheel", systemImage: "play.circle")
             }
+        }
+    }
+    
+    func addOption() {
+        mySettings.valueIndex += 1
+        mySettings.arrayIndeks.append(theValue(val: "\(mySettings.valueIndex)"))
+    }
+    
+    func reduceOption() {
+        if mySettings.valueIndex != 0 {
+            mySettings.valueIndex -= 1
+            mySettings.arrayIndeks.popLast()
         }
     }
     
